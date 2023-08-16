@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1>Create a new task</h1>
+{#Aqui debe mostar el form enviado desde views.py->create_task, es decir la variable form#}
+<div>
+<form method="POST"> 
+    {% csrf_token %} 
+    {#colocar dentro de etiquetas p y se coloca uno debajo del otro#}
+    {{ form.as_p }}
+
+    <button>Save</button>
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+
+{% extends 'layouts/base.html' %}
+
+{#Carga de archivos estaticos#}
+{% load static %}
+
+{% block content %}
+    <body>
+        <h1>{{ title }}</h1>
+
+        <img src="{% static 'image.jpg' %}" alt="" , width=70>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tenetur libero, adipisci asperiores possimus corporis fugiat cupiditate accusamus minus optio, blanditiis nesciunt sunt facere sequi incidunt ratione dicta repellendus fuga!</p>
+    </body>
+   
+{% endblock %}

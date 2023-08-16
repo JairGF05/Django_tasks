@@ -1,0 +1,63 @@
+body{
+    background-color: #202020;
+    color: whitesmoke;
+}
+
+.navbar {
+    background: #404040;
+    padding: 5px 0;
+
+}
+
+/*colorcar elementos uno a lado del otro*/
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Estilo para elementos li*/
+.navbar ul li {
+    text-decoration: none;
+    /*quitar viñetas*/
+    list-style: none;
+}
+
+/*color blanco para cada elemento de la lista*/
+.navbar ul li a{
+    color: white;
+    /*quitar subrayado*/
+    text-decoration: none;
+}
+
+/*color distinto para el hover*/
+.navbar ul li a:hover {
+    color: aquamarine;
+}
+
+/*hacer que el contenbido este más centrado*/
+.container {
+    max-width: 1200px;
+    /*Este color solo es para visualizar el contenedor si se necesita*/
+    /*background: red;*/
+    /*centrado automático del contenedor*/
+    margin:auto;
+    padding: 20px 10px;
+
+}
+
+/*quiero que los proyectos se vean como tarjetas*/
+.card {
+    background: whitesmoke;
+    /*color dle texto*/
+    color: black;
+    padding: 10px;
+    margin-bottom:  2px;
+}
+
+input {
+    background:wheat ;
+    padding: 10px;
+    text-align: center;
+    display: block;
+
+}
